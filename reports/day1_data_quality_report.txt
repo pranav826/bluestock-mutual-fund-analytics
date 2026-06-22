@@ -1,0 +1,27 @@
+DAY 1 – DATA QUALITY SUMMARY
+
+1. All 10 datasets successfully loaded using Pandas.
+
+2. Dataset row counts matched project documentation:
+   - NAV History: 46,000 rows
+   - Investor Transactions: 32,778 rows
+   - Benchmark Indices: 8,050 rows
+
+3. Initial checks performed:
+   - Dataset shape
+   - Column names
+   - Data types
+   - Missing values
+   - Duplicate records
+
+4. Observations:
+   - fund_master.csv contains 40 schemes and 15 attributes.
+   - No missing values detected in fund_master.csv.
+   - No duplicate records detected in fund_master.csv.
+   - launch_date column is currently stored as object and should be converted to datetime during cleaning.
+
+5. Next Steps:
+   - Perform detailed cleaning.
+   - Validate AMFI codes.
+   - Convert date fields to datetime.
+   - Load cleaned data into SQLite database.
